@@ -9,7 +9,7 @@ import React from 'react'
 
 function Model({ ...props }) {
   const group = useRef()
-  const { nodes, materials } = useGLTF('/nike_air_zoom_pegasus_36.glb');
+  const { nodes, materials } = useGLTF('ModelData/nike_air_zoom_pegasus_36.glb');
   console.log(nodes);
   console.log(materials);
 
