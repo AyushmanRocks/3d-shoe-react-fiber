@@ -1,0 +1,23 @@
+.background-page-text{
+    margin: 10px;
+    left: 30%;
+    position: absolute;
+    text-align: center; 
+}
+
+@media (max-width: 550px) {
+    .background-page-text {
+      display:block;
+    }
+    .background-page-text{
+        margin: 10px;
+        font-size: small;
+        position: absolute;
+        text-align: center; 
+    }
+  }
+
+.background-image{
+    height: 100%;
+    width: 100%;
+}

@@ -1,4 +1,4 @@
-import { Switch } from '@mui/material';
+// import { Switch } from '@mui/material';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
@@ -25,7 +25,7 @@ const Navbar = () => {
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           
-          <a class="navbar-brand mt-2 mt-lg-0" href="#">
+          <a class="navbar-brand mt-2 mt-lg-0" href="/">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiHyxna68sO7A2aCeQ3REh_hheH3XS1E0CwA&usqp=CAU"
               height="40"
