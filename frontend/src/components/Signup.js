@@ -51,6 +51,7 @@ const navigate = useNavigate();
 
   return (
     <div className='container col-md-4 mx-auto bg-light'>
+      <div className="card">
       <h1 className='text-center'>Sign Up Here</h1>
     <hr />
 
@@ -69,12 +70,12 @@ const navigate = useNavigate();
         <TextField value={values.mobile} onChange={handleChange} id="mobile" sx={{mt:3}} fullWidth label="Mobile Number"/>
         <TextField value={values.age} onChange={handleChange} id="age" sx={{mt:3}} fullWidth label="Age"/>
         <TextField value={values.password} onChange={handleChange} id="password" sx={{mt:3}} fullWidth label="Password" type="password"/>
-        <Button type="submit" sx={{mt:5}}>Sumbit</Button>
+        <Button className='bg-secondary' type="submit" sx={{mt:4, color:'white'}}>Sumbit</Button>
     </form>
     )}
     </Formik>
 
-  
+    </div>
     </div>
   )
 }

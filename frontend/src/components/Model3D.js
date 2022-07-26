@@ -50,7 +50,7 @@ function Model3D() {
     <div className="App">
         <div className="wrapper">
             {/* <div className="card"> */}
-                <div className="product-canvas">
+                <div className="product-canvas" style={{marginLeft:'10px'}}>
                    <Canvas>
                       <Suspense fallback={null}>
                           <ambientLight />
@@ -66,8 +66,8 @@ function Model3D() {
                       </Suspense>
                    </Canvas>
                 </div>
-                <h2>Color chooser</h2>
-                <div className='colors'>
+                <h2 >Color chooser</h2>
+                <div className='colors' >
                     <div>
                         <input type="color" id="mesh" name="mesh"
                               value={mesh} 
