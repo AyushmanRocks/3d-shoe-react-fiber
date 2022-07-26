@@ -44,10 +44,10 @@ if(res.status === 200){
 }
 
   return (
-      <div>
+      <div className="container">
           <div className="col-md-4 mx-auto bg-light">
               <div className="card mt-5">
-                  <div className="card-body">
+                  <div className="">
 
                       <Formik initialValues={{email : '', password : ''}} onSubmit={userSubmit}>
                           {({values, handleChange, handleSubmit}) => (
@@ -56,13 +56,13 @@ if(res.status === 200){
                                   <h3 className="text-center">Log-in Here</h3>
                                   <hr />
 
-                                  <label className='mt-4'>Email</label>
+                                  <label className='mt-2'>Email</label>
                                   <input value={values.email} onChange={handleChange} id="email" className='form-control' />
                                   
-                                  <label className='mt-4'>Password</label>
+                                  <label className='mt-2'>Password</label>
                                   <input value={values.password} onChange={handleChange} id="password" type="password" className='form-control' />
                               
-                                  <button className='btn btn-secondary mt-5'>Login Now</button>
+                                  <button className='btn btn-secondary mt-4 mb-4'>Login Now</button>
 
                               </form>
                           )}

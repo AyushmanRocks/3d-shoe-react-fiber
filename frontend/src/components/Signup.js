@@ -50,7 +50,8 @@ const navigate = useNavigate();
 
 
   return (
-    <div className='container'><h1 className='text-center'>Sign Up Here</h1>
+    <div className='container col-md-4 mx-auto bg-light'>
+      <h1 className='text-center'>Sign Up Here</h1>
     <hr />
 
 

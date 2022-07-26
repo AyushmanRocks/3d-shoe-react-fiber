@@ -1,4 +1,4 @@
-// import { Switch } from '@mui/material';
+import { Switch } from '@mui/material';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
@@ -6,12 +6,12 @@ const Navbar = () => {
   return (
     
     
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light" >
       
-      <div class="container-fluid">
+      <div className="container-fluid" >
         
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-mdb-toggle="collapse"
           data-mdb-target="#navbarSupportedContent"
@@ -19,13 +19,13 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <i class="fas fa-bars"></i>
+          <i className="fas fa-bars"></i>
         </button>
     
         
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
           
-          <a class="navbar-brand mt-2 mt-lg-0" href="/">
+          <a className="navbar-brand mt-2 mt-lg-0" href="/">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiHyxna68sO7A2aCeQ3REh_hheH3XS1E0CwA&usqp=CAU"
               height="40"
@@ -34,11 +34,11 @@ const Navbar = () => {
             />
           </a>
           
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-box">
-            <li class="nav-item">
-              <NavLink className="nav-link" to="/Login">Sign In</NavLink>
-              <NavLink className="nav-link" to="/Signup">Sign Up</NavLink>
-              <NavLink className="nav-link" to="/Model3D">View Models</NavLink>
+          <ul className="navbar-nav me-auto mb-1 mb-lg-0 " >
+            <li className="nav-item" >
+              <NavLink className="nav-link" style={{display:'inline'}} to="/Login">Sign In</NavLink>
+              <NavLink className="nav-link" style={{display:'inline'}} to="/Signup">Sign Up</NavLink>
+              <NavLink className="nav-link" style={{display:'inline'}} to="/Model3D">View Models</NavLink>
             </li>
            
           </ul>
