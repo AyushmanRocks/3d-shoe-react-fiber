@@ -1,0 +1,13 @@
+.my-h1{
+    font-size: 50px;
+    color: blueviolet;
+}
+
+.my-btn1:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(201, 14, 14);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}

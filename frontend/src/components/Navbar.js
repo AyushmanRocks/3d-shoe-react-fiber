@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
       
       <div class="container-fluid">
         
@@ -34,8 +34,10 @@ const Navbar = () => {
             />
           </a>
           
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-box">
             <li class="nav-item">
+              <NavLink className="nav-link" to="/Login">Sign In</NavLink>
+              <NavLink className="nav-link" to="/Signup">Sign Up</NavLink>
               <NavLink className="nav-link" to="/Model3D">View Models</NavLink>
             </li>
            
