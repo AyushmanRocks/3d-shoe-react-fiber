@@ -25,7 +25,7 @@ const Navbar = () => {
         
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           
-          <a className="navbar-brand mt-2 mt-lg-0" href="/">
+          <a className="navbar-brand mt-2 mt-lg-0" href="/home">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiHyxna68sO7A2aCeQ3REh_hheH3XS1E0CwA&usqp=CAU"
               height="40"
@@ -36,6 +36,7 @@ const Navbar = () => {
           
           <ul className="navbar-nav me-auto mb-1 mb-lg-0 " >
             <li className="nav-item" >
+              <NavLink className="nav-link" style={{display:'inline'}} to="/home">Home</NavLink>
               <NavLink className="nav-link" style={{display:'inline'}} to="/Login">Sign In</NavLink>
               <NavLink className="nav-link" style={{display:'inline'}} to="/Signup">Sign Up</NavLink>
               <NavLink className="nav-link" style={{display:'inline'}} to="/Model3D">View Models</NavLink>

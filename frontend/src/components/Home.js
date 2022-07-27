@@ -6,6 +6,7 @@ const Home = () => {
     <div>
       <h1 className='background-page-text'>Design Your Own Product</h1>
       <img className='background-image ' src={Background} />
+
       
     </div>
   )
