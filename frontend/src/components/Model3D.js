@@ -9,7 +9,7 @@ import React from 'react'
 
 function Model({ ...props }) {
   const group = useRef()
-  const { nodes, materials } = useGLTF('ModelData/nike_air_zoom_pegasus_36.glb');
+  const { nodes, materials } = useGLTF('ModelData/shoe.gltf');
   console.log(nodes);
   console.log(materials);
 
@@ -27,7 +27,8 @@ function Model({ ...props }) {
     return Object.keys(nodes).filter(node => (
       nodes[node].type === "Mesh"
     )).map(obj => {
-      return <mesh geometry={nodes[obj].geometry} material={materials.NikeShoe} material-color={props.customColors.setStripes}/>
+      
+      return <mesh geometry={nodes[obj].geometry} material={materials.laces} material-color={'#f00'}/>
     })
   }
   
@@ -67,6 +68,9 @@ function Model3D() {
                    </Canvas>
                 </div>
                 <h2 >Color chooser</h2>
+                 
+
+
                 <div className='colors' >
                     <div>
                         <input type="color" id="mesh" name="mesh"

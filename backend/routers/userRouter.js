@@ -1,7 +1,5 @@
 // for performing user database operations
-const { response } = require('express');
 const express = require('express');
-const { find } = require('../models/userModel');
 const router = express.Router();
 
 // import user model to this router
@@ -123,8 +121,6 @@ router.post('/authenticate', (req, res) => {
             console.log('login failed');
             res.status(400).json({status:'Login failed'});
         }
-
-
     }).catch((err) => {
         console.error(err);
         res.status(500).json(err);

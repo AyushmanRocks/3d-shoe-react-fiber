@@ -15,7 +15,7 @@ const Login = () => {
       // 4. data format
 
      const res= await fetch("http://localhost:5000/user/authenticate", {
-        method: "GET",
+        method: "POST",
        body: JSON.stringify(formdata),
       header: {
         'Content-Type': 'application/json'
