@@ -6,6 +6,7 @@ import Model3D from './components/Model3D';
 import Navbar from './components/Navbar';
 import Login from './components/Login';
 import Signup from './components/Signup';
+import { Suspense } from 'react';
 
 function App() {
 
@@ -25,7 +26,11 @@ function App() {
 
 
           {/* <Route path="/home" element={<Home/>} /> */}
-          <Route element={<Model3D></Model3D>} path="Model3D"/>
+          <Route element={
+          <Suspense fallback={null}>
+          <Model3D></Model3D>
+          </Suspense>
+          } path="Model3D"/>
           <Route element={<Login></Login>} path="Login"/>
           <Route element={<Signup></Signup>} path="Signup" />
          
