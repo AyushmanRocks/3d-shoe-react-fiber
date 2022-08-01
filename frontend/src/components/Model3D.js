@@ -68,7 +68,7 @@ function Model3D() {
   return (
     <div className="App">
       <div className="wrapper">
-        <div className="product-canvas" style={{ marginLeft: "10px" }}>
+        <div className="product-canvas border border-warning border-3 rounded-2" style={{ marginLeft: "10px" }}>
           <Canvas>
             <Suspense fallback={null}>
               <ambientLight />
@@ -103,9 +103,9 @@ function Model3D() {
         </div>
 
         <div>
+          
           <h2 className="text-center">Color chooser</h2>
-
-          <div className="colors container mt-5 ">
+          <div className="colors container mt-2 border border-3 border-danger">
             <div className="row">
               <div className="col-md-3 mt-4">
                 <div className="card">

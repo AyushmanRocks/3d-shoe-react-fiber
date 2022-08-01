@@ -19,10 +19,12 @@ function App() {
         <Routes>
           <Route element={
             <Authorisor>
-              <Home/>
+              
+              <Model3D/>
             </Authorisor>
 
-          }path="/home"/>
+          }
+          path="/Model3D" />
 
 
           {/* <Route path="/home" element={<Home/>} /> */}
@@ -32,6 +34,7 @@ function App() {
           </Suspense>
           } path="Model3D"/>
           <Route element={<Login></Login>} path="Login"/>
+          <Route element={<Home></Home>} path="Home"/>
           <Route element={<Signup></Signup>} path="Signup" />
          
         </Routes>
