@@ -26,12 +26,12 @@
 }
 
 .product-canvas {
-  width: 45vw;
-  height: 88vh;
-  background:white;
-  box-shadow:  10px 15px 15px 6px #3891b4;
+  width: 100%;
+  height: 80vh;
+  /* background:white; */
+  /* box-shadow:  10px 15px 15px 6px #3891b4; */
   border-radius: 0px;
-  margin-bottom:20px
+  /* margin-top:10vh; */
 
 }
 
@@ -41,3 +41,7 @@ flex-direction:row;
 }
 
 .colors div {padding:8px;}
+
+.pallete-card{
+  height: 100%;
+}
