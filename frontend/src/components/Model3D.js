@@ -3,6 +3,8 @@ import { Suspense, useEffect, useRef, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 
 function Model({ ...props }) {
   const group = useRef();
@@ -41,6 +43,9 @@ function Model({ ...props }) {
 }
 
 function Model3D() {
+  const navigate = useNavigate();
+  const [currentUser, setCurrentUser] = useState(JSON.parse(sessionStorage.getItem("user")))
+
   const [mesh, setMesh] = useState("#ffffff");
   const [stripes, setStripes] = useState("#ffffff");
   const [sole, setSole] = useState("#ffffff");
@@ -50,7 +55,7 @@ function Model3D() {
   const [caps, setCaps] = useState("#ffffff");
   const [inner, setInner] = useState("#ffffff");
 
-  const modelName = "ModelData/used_new_balance_574_classic______free.glb";
+  const modelName = "ModelData/spy-hypersport.glb";
 
   const { nodes, materials } = useGLTF(modelName);
   console.log(nodes);
@@ -108,7 +113,7 @@ function Model3D() {
           <div className="colors container mt-2 border border-3 border-danger">
             <div className="row">
               <div className="col-md-3 mt-4">
-                <div className="card">
+                <div className="cards">
                   {customMat.map((mat, i) => (
                     <div className="card-body">
                     <input

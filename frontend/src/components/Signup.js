@@ -51,7 +51,7 @@ const navigate = useNavigate();
 
   return (
     <div className='container col-md-4 mx-auto bg-light'>
-      <div className="card">
+      <div className="cards">
       <h1 className='text-center'>Sign Up Here</h1>
     <hr />
 

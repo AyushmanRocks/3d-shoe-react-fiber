@@ -108,7 +108,8 @@ router.put('/getbyidandupdate/:id', (req, res) => {
 
 router.post('/authenticate', (req, res) => {
     const formdata =req.body;
-    Model.findOne({email:formdata.mail, password: formdata.password})
+    console.log(formdata);
+    Model.findOne({email:formdata.email, password: formdata.password})
     .then((result) => {
         console.log(result);
         

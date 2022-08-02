@@ -1,37 +1,41 @@
 import './App.css';
-import Authorisor from './components/Auth';
 import { BrowserRouter, Routes, Route, Link, Navigate } from 'react-router-dom';
+import Authorisor from './components/Auth';
 import Home from './components/Home';
 import Model3D from './components/Model3D';
 import Navbar from './components/Navbar';
 import Login from './components/Login';
 import Signup from './components/Signup';
-import { Suspense } from 'react';
+import { Suspense, useState } from 'react';
+import { UserProvider } from './useContext';
 
 function App() {
-
+  const [currentUser, setcurrentUser] = useState(JSON.parse(sessionStorage.getItem("user")));
+  
 
     return (
-     
+     <UserProvider currentUser={currentUser}>
       <BrowserRouter>
       <Navbar/>
       
         <Routes>
-          <Route element={
+          {/* <Route element={
             <Authorisor>
               
               <Model3D/>
             </Authorisor>
 
           }
-          path="/Model3D" />
+          path="/Model3D" /> */}
 
 
           {/* <Route path="/home" element={<Home/>} /> */}
           <Route element={
+            <Authorisor>
           <Suspense fallback={null}>
           <Model3D></Model3D>
           </Suspense>
+          </Authorisor>
           } path="Model3D"/>
           <Route element={<Login></Login>} path="Login"/>
           <Route element={<Home></Home>} path="Home"/>
@@ -39,7 +43,7 @@ function App() {
          
         </Routes>
       </BrowserRouter>
-
+      </UserProvider>
     );
   }
   
