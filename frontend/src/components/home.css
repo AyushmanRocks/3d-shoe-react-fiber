@@ -43,8 +43,8 @@ overflow: hidden;
     transform: rotateY(180deg);
 }
 
-
-.card{
+/* change 1 */
+.card-c{
     width: 350px;
     height: 400px;
     position: relative;
