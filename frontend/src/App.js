@@ -13,6 +13,7 @@ function App() {
   const [currentUser, setcurrentUser] = useState(JSON.parse(sessionStorage.getItem("user")));
   
 
+  
     return (
      <UserProvider currentUser={currentUser}>
       <BrowserRouter>
@@ -29,7 +30,7 @@ function App() {
           path="/Model3D" /> */}
 
 
-          {/* <Route path="/home" element={<Home/>} /> */}
+          
           <Route element={
             <Authorisor>
           <Suspense fallback={null}>
@@ -37,7 +38,8 @@ function App() {
           </Suspense>
           </Authorisor>
           } path="Model3D"/>
-          <Route element={<Login></Login>} path="Login"/>
+          <Route  element={<Home></Home>} path="/"/>
+          <Route element={<Login></Login>} path="Login" />
           <Route element={<Home></Home>} path="Home"/>
           <Route element={<Signup></Signup>} path="Signup" />
          

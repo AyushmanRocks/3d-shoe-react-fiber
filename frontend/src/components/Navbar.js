@@ -75,7 +75,7 @@ const Navbar = () => {
       
         <div class="d-flex align-items-center">
           <div class="dropdown">
-            {/* {loggedIn ? ( */}
+            {loggedIn ? (
               <Link
                 class="dropdown-toggle d-flex align-items-center hidden-arrow"
                 to="#"
@@ -92,9 +92,9 @@ const Navbar = () => {
                   loading="lazy"
                 />
               </Link>
-                       {/* ) : (
+                       ) : (
               ""
-            )}  */}
+            )} 
 
             <ul
               class="dropdown-menu dropdown-menu-end"

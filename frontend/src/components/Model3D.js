@@ -55,7 +55,7 @@ function Model3D() {
   const [caps, setCaps] = useState("#ffffff");
   const [inner, setInner] = useState("#ffffff");
 
-  const modelName = "ModelData/spy-hypersport.glb";
+  const modelName = "ModelData/shoe.gltf";
 
   const { nodes, materials } = useGLTF(modelName);
   console.log(nodes);
