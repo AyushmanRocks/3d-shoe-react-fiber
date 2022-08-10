@@ -1,5 +1,6 @@
 import React from "react";
 import "./home.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -8,23 +9,78 @@ const Home = () => {
         <div className="card__father">
           <div className="card">
             <div className="card__front">
-              <div className="bg"></div>
+              <div className="bg img-design img-1"></div>
               <div className="body__card_front">
-                <h1>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
-                </h1>
+                <h1 style={{top:"30px", position:"absolute"}}>Design 1</h1>
+                <h3 className="text-card">Hover To See Transition</h3>
               </div>
             </div>
             <div className="card__back">
+            <div className="bg img-design img-2"></div>
               <div className="body__card_back">
-                <h1>Card 1</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Pariatur ab quas recusandae voluptatum aliquid tempore animi
-                  corporis voluptas. Tempore neque iure necessitatibus voluptas
-                  nesciunt animi dolores incidunt delectus sapiente illum.
-                </p>
+                <h1>Design 1</h1>
               </div>
+              <Link className="text-card" style={{left:"20%"}} to="/Model3D" ><h2>Click To Design</h2></Link>
+            </div>
+          </div>
+        </div>
+      
+
+        <div className="card__father">
+          <div className="card">
+            <div className="card__front">
+              <div className="bg img-design img-1"></div>
+              <div className="body__card_front">
+                <h1 style={{top:"30px", position:"absolute"}}>Design 1</h1>
+                <h3 className="text-card">Hover To See Transition</h3>
+              </div>
+            </div>
+            <div className="card__back">
+            <div className="bg img-design img-2"></div>
+              <div className="body__card_back">
+                <h1>Design 1</h1>
+              </div>
+              <Link className="text-card" style={{left:"20%"}} to="/Model3D" ><h2>Click To Design</h2></Link>
+            </div>
+          </div>
+        </div>
+
+
+        <div className="card__father">
+          <div className="card">
+            <div className="card__front">
+              <div className="bg img-design img-1"></div>
+              <div className="body__card_front">
+                <h1 style={{top:"30px", position:"absolute"}}>Design 1</h1>
+                <h3 className="text-card">Hover To See Transition</h3>
+              </div>
+            </div>
+            <div className="card__back">
+            <div className="bg img-design img-2"></div>
+              <div className="body__card_back">
+                <h1>Design 1</h1>
+              </div>
+              <Link className="text-card" style={{left:"20%"}} to="/Model3D" ><h2>Click To Design</h2></Link>
+            </div>
+          </div>
+        </div>
+
+
+        <div className="card__father">
+          <div className="card">
+            <div className="card__front">
+              <div className="bg img-design img-1"></div>
+              <div className="body__card_front">
+                <h1 style={{top:"30px", position:"absolute"}}>Design 1</h1>
+                <h3 className="text-card">Hover To See Transition</h3>
+              </div>
+            </div>
+            <div className="card__back">
+            <div className="bg img-design img-2"></div>
+              <div className="body__card_back">
+                <h1>Design 1</h1>
+              </div>
+              <Link className="text-card" style={{left:"20%"}} to="/Model3D" ><h2>Click To Design</h2></Link>
             </div>
           </div>
         </div>
@@ -32,50 +88,22 @@ const Home = () => {
         <div className="card__father">
           <div className="card">
             <div className="card__front">
-              <div className="bg"></div>
+              <div className="bg img-design img-1"></div>
               <div className="body__card_front">
-                <h1>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </h1>
+                <h1 style={{top:"30px", position:"absolute"}}>Design 1</h1>
+                <h3 className="text-card">Hover To See Transition</h3>
               </div>
             </div>
             <div className="card__back">
+            <div className="bg img-design img-2"></div>
               <div className="body__card_back">
-                <h1>Card 2</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Pariatur ab quas recusandae voluptatum aliquid tempore animi
-                  corporis voluptas. Tempore neque iure necessitatibus voluptas
-                  nesciunt animi dolores incidunt delectus sapiente illum.
-                </p>
+                <h1>Design 1</h1>
               </div>
+              <Link className="text-card" style={{left:"20%"}} to="/Model3D" ><h2>Click To Design</h2></Link>
             </div>
           </div>
         </div>
 
-        <div className="card__father">
-          <div className="card">
-            <div className="card__front">
-              <div className="bg"></div>
-              <div className="body__card_front">
-                <h1>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
-                </h1>
-              </div>
-            </div>
-            <div className="card__back">
-              <div className="body__card_back">
-                <h1>Card 3</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Pariatur ab quas recusandae voluptatum aliquid tempore animi
-                  corporis voluptas. Tempore neque iure necessitatibus voluptas
-                  nesciunt animi dolores incidunt delectus sapiente illum.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

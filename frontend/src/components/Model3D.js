@@ -92,18 +92,18 @@ function Model3D() {
             </Canvas>
           </div>
         </div>
-
+{/* colour chooser */}
         <div className="col-md-4">
-          <div className="card pallete-card">
+          <div className="card-c pallete-card">
             <div className="card-body">
               <h2 className="text-center">Color chooser</h2>
               <hr />
               {customMat.map((mat, i) => (
-                <div className="card-body">
-                  <input type="color" id="mesh" name="mesh" value={mat} onChange={(e) => updateCustomMat(i, e.target.value)} />
+                <div className="card-body" style={{paddingTop: "10px"}}>
                   <h4 style={{ display: "inline" }} for="mesh">
-                    {Object.keys(materials)[i]}
-                  </h4>
+                    {Object.keys(materials)[i].toUpperCase()}
+                  </h4>{"  "}&nbsp;&nbsp;&nbsp;
+                  <input type="color" id="mesh" name="mesh" value={mat} onChange={(e) => updateCustomMat(i, e.target.value)} />
                 </div>
               ))}
             </div>

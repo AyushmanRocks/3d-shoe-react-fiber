@@ -353,8 +353,8 @@ let design = anime({
           <div className="row">
             <div className="authfy-container col-xs-12 col-sm-10 col-md-8 col-lg-6 col-sm-offset-1 col-md-offset-2 col-lg-offset-3">
               <div className="col-sm-5 authfy-panel-left">
-                <div className="brand-col">
-                  <div className="headline">
+                <div className="brand-col ">
+                  <div className="headline ">
                     <div className="brand-logo">
                       <img
                         src="https://i.gifer.com/1UEn.gif"
